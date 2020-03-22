@@ -94,7 +94,7 @@ public class Stalker extends AdvancedRobot {
 
         this._oppEnergy = e.getEnergy();
 
-        // update after Stalker.bot.EnemyWave detection, because that needs the previous
+        // update after EnemyWave detection, because that needs the previous
         // enemy location as the source of the wave
         this._enemyLocation = project(this._myLocation, absBearing, e.getDistance());
 
@@ -177,7 +177,7 @@ public class Stalker extends AdvancedRobot {
 
 
     /**
-     * Given the Stalker.bot.EnemyWave that the bullet was on, and the point where we were hit,
+     * Given the EnemyWave that the bullet was on, and the point where we were hit,
      * calculate the index into our stat array for that factor.
      */
     private static int getFactorIndex(EnemyWave ew, Point2D.Double targetLocation) {
@@ -189,7 +189,7 @@ public class Stalker extends AdvancedRobot {
 
 
     /**
-     * Given the Stalker.bot.EnemyWave that the bullet was on, and the point where we were hit,
+     * Given the EnemyWave that the bullet was on, and the point where we were hit,
      * update our stat array to reflect the danger in that area.
      */
     private void logHit(EnemyWave ew, Point2D.Double targetLocation) {
