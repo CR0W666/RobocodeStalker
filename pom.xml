@@ -25,7 +25,7 @@
         <dependency>
             <groupId>net.sf.robocode</groupId>
             <artifactId>robocode.api</artifactId>
-            <version>1.9.2.1</version>
+            <version>1.9.4.0</version>
         </dependency>
 
     </dependencies>
